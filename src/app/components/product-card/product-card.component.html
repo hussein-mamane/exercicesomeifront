@@ -1,0 +1,10 @@
+<div class="col-sm-3">
+  <div class="card" style="width: 18rem;">
+    <div class="card-block">
+      <h5 class="card-title">{{product.name}}</h5>
+        <p class="card-text" [innerHTML]="product.description"></p>
+        <p class="card-text">Type: {{product.price}}</p>
+        <a routerLink="/list/{{product.productId}}" class="btn btn-primary">products</a>
+    </div>
+  </div>
+</div>
