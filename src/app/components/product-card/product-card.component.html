@@ -1,10 +1,9 @@
 
-  <div class="col mt-4 p-2">
-    <div class="card p-2" style="width: 13rem;">
-
-        <div class="card-block">
+  <div class="col mt-4 p-2 ">
+    <div class="card p-2" style="width: 14rem;">
+      <img class="card-img-top" style="width: 13rem;" src="/assets/{{product.imgPath}} " alt = "image">
+        <div class="card-body">
           <h5 class="card-title">{{product.name}}</h5>
-            <p class="card-text" [innerHTML]="'Description : '+product.description"></p>
             <p class="card-text">Price: {{product.price}}</p>
           <div class="justify-content-end">
             <a routerLink="/list/{{product.productId}}" class="btn btn-outline-dark">Details</a>
